@@ -1,0 +1,47 @@
+ * {
+     margin: 0;
+ }
+
+ body {
+     font-family: Geneva, sans-serif;
+ }
+
+ #fav {
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ #header {
+     background-color: dimgrey;
+     height: 2rem;
+     border-bottom: 3rem solid lightsalmon;
+
+ }
+
+ #header h1 {
+     font-size: 1.5rem;
+     color: white;
+ }
+
+ #title {
+     height: 27rem;
+     background-color: lightgray;
+     text-align: center;
+ }
+
+ #about {
+     display: flex;
+
+ }
+
+ #about img {
+     height: 15rem;
+ }
+
+ h3 {
+     color: lightsalmon;
+     width: 10rem;
+     margin: 0 auto;
+     text-align: center;
+     padding-top: 1.5rem;
+ }
