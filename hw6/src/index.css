@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-mercy-red: #E52421;
+  --color-mercy-orange-deep: #EA3725;
+  --color-mercy-orange: #EE5A24;
+  --color-mercy-amber: #F58220;
+  --color-mercy-yellow: #FDB913;
+  --color-mercy-gold: #FFF200;
+  --color-mercy-grey: #404040;
+  --color-mercy-slate: #2C3437;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: #F58220;
+  color: white;
+}

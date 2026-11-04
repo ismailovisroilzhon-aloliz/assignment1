@@ -1,0 +1,6 @@
+{
+  "name": "MercyMed - Evidence-Based Medical Center",
+  "description": "Official website prototype for MercyMed medical center in Bishkek, Kyrgyzstan, featuring evidence-based family healthcare, international doctor team, multilingual support, and WhatsApp booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
