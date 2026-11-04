@@ -6,9 +6,9 @@
 import React, { useState, useEffect } from 'react';
 import { Language } from '../types';
 import { TRANSLATIONS } from '../data/translations';
-import { 
-  MessageSquare, 
-  MapPin, 
+import {
+  MessageSquare,
+  MapPin,
   CalendarCheck,
   CheckCircle2,
   Stethoscope
@@ -30,19 +30,19 @@ export const Hero: React.FC<HeroProps> = ({
   // 3 distinct high-res clinic scenes with public asset paths
   const bgImages = [
     {
-      url: '/assets/hero/hero_clinic_interior_1793717940316.jpg',
+      url: './assets/hero/hero_clinic_interior_1793717940316.jpg',
       titleEn: 'Warm Outpatient Reception & Triage',
       titleRu: 'Светлый холл и регистратура клиники',
       titleKy: 'Клиниканын жарык каттоо бөлмөсү',
     },
     {
-      url: '/assets/hero/hero_pediatric_consultation_1793717963186.jpg',
+      url: './assets/hero/hero_pediatric_consultation_1793717963186.jpg',
       titleEn: 'Compassionate Pediatric & Family Consultation',
       titleRu: 'Педиатрический и семейный прием',
       titleKy: 'Педиатриялык жана үй-бүлөлүк кабыл алуу',
     },
     {
-      url: '/assets/hero/hero_diagnostics_care_1793717982588.jpg',
+      url: './assets/hero/hero_diagnostics_care_1793717982588.jpg',
       titleEn: 'Modern Ultrasound & Clinical Diagnostics',
       titleRu: 'Современный кабинет УЗИ и диагностики',
       titleKy: 'Заманбап УЗИ жана диагностика кабинети',
@@ -61,11 +61,11 @@ export const Hero: React.FC<HeroProps> = ({
   }, [bgImages.length]);
 
   return (
-    <section 
+    <section
       className="relative isolate overflow-hidden pt-10 pb-20 md:pt-16 md:pb-32 border-b border-[#e6e3e7] bg-stone-100"
       style={{ borderColor: '#e6e3e7' }}
     >
-      
+
       {/* Dynamic 3-Image Cycling Loop clearly visible in isolated stacking context */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {bgImages.map((img, index) => {
@@ -73,9 +73,8 @@ export const Hero: React.FC<HeroProps> = ({
           return (
             <div
               key={img.url}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
-              }`}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+                }`}
             >
               <img
                 src={img.url}
@@ -88,13 +87,13 @@ export const Hero: React.FC<HeroProps> = ({
       </div>
 
       {/* Gentle readability gradient: ensures crystal clear text on left while clinic photos shine through */}
-      <div 
+      <div
         className="absolute inset-0 z-1 bg-gradient-to-r from-stone-50/92 via-stone-50/75 to-stone-50/20 md:to-transparent pointer-events-none"
         aria-hidden="true"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-2">
-        
+
         {/* Top Clean Subtitle & Location Tag */}
         <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm font-semibold text-stone-700 mb-6">
           <span className="text-[#EE5A24] font-bold tracking-wide uppercase">
@@ -109,7 +108,7 @@ export const Hero: React.FC<HeroProps> = ({
 
         {/* Hero Value Statement */}
         <div className="max-w-3xl">
-          <h1 
+          <h1
             className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold tracking-tight text-stone-900 leading-[1.15] mb-6"
             style={{ textWrap: 'balance' }}
           >
@@ -122,7 +121,7 @@ export const Hero: React.FC<HeroProps> = ({
 
           {/* Primary Action Buttons: Prominent Noticeable Button to Services Page */}
           <div className="flex flex-wrap items-center gap-4 mb-4">
-            
+
             {/* Noticeable Button to Services Page */}
             <button
               type="button"
@@ -164,11 +163,10 @@ export const Hero: React.FC<HeroProps> = ({
                 key={idx}
                 type="button"
                 onClick={() => setCurrentBgIndex(idx)}
-                className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                  idx === currentBgIndex
+                className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${idx === currentBgIndex
                     ? 'w-7 bg-[#EE5A24]'
                     : 'w-2 bg-stone-300 hover:bg-stone-400'
-                }`}
+                  }`}
                 aria-label={`Slide ${idx + 1}`}
               />
             ))}
