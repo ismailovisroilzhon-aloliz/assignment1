@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    ase: '/assignment1/hw6/',
+    base: '/assignment1/hw6/',
 
     plugins: [react(), tailwindcss()],
     resolve: {
