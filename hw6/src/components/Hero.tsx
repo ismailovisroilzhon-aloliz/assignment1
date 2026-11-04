@@ -30,19 +30,19 @@ export const Hero: React.FC<HeroProps> = ({
   // 3 distinct high-res clinic scenes with public asset paths
   const bgImages = [
     {
-      url: './assets/hero/hero_clinic_interior_1793717940316.jpg',
+      url: '/assets/hero/hero_clinic_interior_1793717940316.jpg',
       titleEn: 'Warm Outpatient Reception & Triage',
       titleRu: 'Светлый холл и регистратура клиники',
       titleKy: 'Клиниканын жарык каттоо бөлмөсү',
     },
     {
-      url: './assets/hero/hero_pediatric_consultation_1793717963186.jpg',
+      url: '/assets/hero/hero_pediatric_consultation_1793717963186.jpg',
       titleEn: 'Compassionate Pediatric & Family Consultation',
       titleRu: 'Педиатрический и семейный прием',
       titleKy: 'Педиатриялык жана үй-бүлөлүк кабыл алуу',
     },
     {
-      url: './assets/hero/hero_diagnostics_care_1793717982588.jpg',
+      url: '/assets/hero/hero_diagnostics_care_1793717982588.jpg',
       titleEn: 'Modern Ultrasound & Clinical Diagnostics',
       titleRu: 'Современный кабинет УЗИ и диагностики',
       titleKy: 'Заманбап УЗИ жана диагностика кабинети',
@@ -164,8 +164,8 @@ export const Hero: React.FC<HeroProps> = ({
                 type="button"
                 onClick={() => setCurrentBgIndex(idx)}
                 className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${idx === currentBgIndex
-                    ? 'w-7 bg-[#EE5A24]'
-                    : 'w-2 bg-stone-300 hover:bg-stone-400'
+                  ? 'w-7 bg-[#EE5A24]'
+                  : 'w-2 bg-stone-300 hover:bg-stone-400'
                   }`}
                 aria-label={`Slide ${idx + 1}`}
               />
